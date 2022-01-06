@@ -1,0 +1,136 @@
+{
+	"camPos": [141,114,346],
+	"target": [0, 0, 0],
+	"effect": false,
+	"gamma": true,
+	"antialias": false,
+	"bloom": false,
+	"saoSW": false,
+	"bloomStrength": 1,
+	"bloomThreshold": 0.95,
+	"bloomRadius": 0.5,
+	"lightAmbientColor": "#ffffff",
+	"lightAmbient": "0",
+	"lightHemiColor": "#ffffff",
+	"lightHemiColorG": "#888888",
+	"lightHemi": "0.1",
+	"lightPointColor": "#ffffff",
+	"lightPoint": "0.09",
+	"lightShadow": false,
+	"lightSunColor": "#f7e8b5",
+	"lightSun": "2",
+	"lightSunHigh": "51.92",
+	"lightSunAngle": "334.25",
+	"lightSunBias": 25,
+	"sceneFog": true,
+	"fogColor": "#001d71",
+	"fogDensity": "10.3",
+	"skyType": 1,
+	"skyColor": "#001d71",
+	"skyBox": 216,
+	"skyShader1": 50,
+	"skyShader2": 50,
+	"skyShader3": 22,
+	"skyShader4": 20,
+	"lightMapIntensity": "0",
+	"aoMapIntensity": "0",
+	"envMapIntensity": "0.7",
+	"envMapTexture": 11,
+	"techColor": "#00beff",
+	"techOpacity": 0.05,
+	"techModelLine": false,
+	"models": [
+		{
+			"type": 1,
+			"name": "dm.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		},{
+			"type": 1,
+			"name": "1jxl.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		},{
+			"type": 1,
+			"name": "2jxl.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		},{
+			"type": 1,
+			"name": "1xyss.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		},{
+			"type": 1,
+			"name": "2xyss.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		},{
+			"type": 1,
+			"name": "3xyss.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		},{
+			"type": 1,
+			"name": "jgss.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		},{
+			"type": 1,
+			"name": "dlt.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		},{
+			"type": 1,
+			"name": "wtg.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		},{
+			"type": 1,
+			"name": "hqzx.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		},{
+			"type": 1,
+			"name": "zjss.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		},{
+			"type": 1,
+			"name": "tsg.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		},{
+			"type": 1,
+			"name": "xzl.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		}
+	]
+}

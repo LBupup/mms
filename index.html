@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+
+		<title>核工大</title>
+
+		<style>
+			body {
+				border: none;
+				overflow: hidden;
+				margin: 0px;
+				background: #000000;
+				    width: 100%;
+				    height: 100%;
+			}
+			a > div{
+				position: relative;
+				float: left;
+				z-index: 1;
+				margin-left: 19px;
+				color: #ff0000;
+				cursor: pointer;
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+		<!--新建容器画布，设定ID号-->
+		<div style="position:absolute; width:100%; height:100%; top:0px " id="myCanvas">
+			<!-- <div id="jianbian" style="width: 100%;height: 100%;position: absolute;z-index: 1;background-image: radial-gradient(26% 58%, #ffffff00 20%, #010b3645 70%, #01040eeb 150%);">
+			</div> -->
+		</div>
+
+		<!--引入mms3D、mmsDT两个js的库文件，一个project项目js文件-->
+		<script src="js/mms3D.V122.js"></script>
+		<script src="js/mmsDT.V40Code.js"></script>
+		<script src="js/mmsDT.project.js"></script>
+		<script src="js/jquery-3.3.1.min.js"></script>
+
+		<script>
+			var dirUrl = "./";
+			new MMSDT.newCanvas("myCanvas", dirUrl); //新建画布(传入id号，相对目录)
+			
+			// 返回全部
+			function returnHome(){
+				MMAPI.returnHome();
+			}
+			//返回上一级
+			function return1() {
+				MMAPI.return();
+			}
+			// 透明
+			function Opcaity(){
+				MMAPI.Opcaity();
+			}
+			// 聚焦进入楼栋
+			function eterBuilding(id) {
+				MMAPI.eterBuilding(id);
+			}
+			// 楼层
+			function FocusFloors(id) {
+				MMAPI.FocusFloors(id);
+			}
+			// 设备定位
+			function equipmentPosition(id) {
+				MMAPI.restore(unHighlight);
+				MMAPI.equipmentPosition(id);
+				MMAPI.status(id, 2, true);
+			}
+			// 设备取消高亮
+			function unHigh() {
+				MMAPI.restore(unHighlight);
+			}
+			// 子系统设备筛选
+			function equipmentScreening(id) {
+				MMAPI.equipmentScreening(id);
+			}
+			
+			// 风管
+			function electromechanicalFG(){
+				MMAPI.electromechanicalFG();
+			}
+			// 水管
+			function electromechanicalSG(){
+				MMAPI.electromechanicalSG();
+			}
+			// 电网
+			function electromechanicalDW(){
+				MMAPI.electromechanicalDW();
+			}
+			// 开启/继续自动巡游
+			function startCruise(){
+				zt = 1
+				MMAPI.startCruise();
+			}
+			// 暂停巡游
+			function pauseCruise(){
+				zt = 2
+				MMAPI.pauseCruise();
+			}
+			// 退出巡游
+			function stop(){
+				MMAPI.stop();
+				zt = 2;
+			}
+			// 室外机电
+			function LDswjd(){
+				MMAPI.LDswjd();
+			}
+			
+			
+		</script>
+
+		<a onclick="returnHome()" ><div >返回全景</div></a>
+		<a onclick="return1()" ><div >返回</div></a>
+		<a onclick="Opcaity()" ><div>透明</div></a>
+		<a onclick="eterBuilding('JXL01')" ><div>一号教学楼聚焦进入楼栋</div></a>
+		<a onclick="eterBuilding('JXL02')" ><div>二号教学楼聚焦进入楼栋</div></a>
+		<a onclick="eterBuilding('XZL')" ><div>行政楼教学楼聚焦进入楼栋</div></a>
+		<a onclick="eterBuilding('TSG')" ><div>图书馆教学楼聚焦进入楼栋</div></a>
+		<a onclick="eterBuilding('DLT')" ><div>大礼堂教学楼聚焦进入楼栋</div></a>
+		<a onclick="eterBuilding('ZJSS')" ><div>专家宿舍教学楼聚焦进入楼栋</div></a>
+		<a onclick="eterBuilding('HQ')" ><div>后勤中心教学楼聚焦进入楼栋</div></a>
+		<a onclick="eterBuilding('WTG')" ><div>文体馆教学楼聚焦进入楼栋</div></a>
+		<a onclick="eterBuilding('XYSS01')" ><div>一号学院宿舍教学楼聚焦进入楼栋</div></a>
+		<a onclick="eterBuilding('XYSS02')" ><div>二号学院宿舍教学楼聚焦进入楼栋</div></a>
+		<a onclick="eterBuilding('XYSS03')" ><div>三号学院宿舍教学楼聚焦进入楼栋</div></a>
+		<a onclick="eterBuilding('JGSS')" ><div>教工宿舍教学楼聚焦进入楼栋</div></a>
+		<a onclick="eterBuilding('ZHX')" ><div>接待轩聚焦进入楼栋</div></a>
+		<a onclick="eterBuilding('ZHT')" ><div>中核塔聚焦进入楼栋</div></a>
+		<a onclick="eterBuilding('XM')" ><div>校门聚焦进入楼栋</div></a>
+		<a onclick="eterBuilding('RFDK')" ><div>人防地库</div></a>
+		<a onclick="LDswjd()" ><div>室外机电</div></a>
+		<a onclick="FocusFloors('JGSS_01F')" ><div style="color: white;">教工宿舍1</div></a>
+		<a onclick="FocusFloors('JGSS_02F')" ><div style="color: white;">教工宿舍2</div></a>
+		<a onclick="FocusFloors('JGSS_03F')" ><div style="color: white;">教工宿舍3</div></a>
+		<a onclick="FocusFloors('DLT_01F')" ><div style="color: white;">大礼堂1</div></a>
+		<a onclick="FocusFloors('DLT_02F')" ><div style="color: white;">大礼堂2</div></a>
+		<a onclick="FocusFloors('HQ_01F')" ><div style="color: white;">后勤3</div></a>
+		<a onclick="FocusFloors('HQ_02F')" ><div style="color: white;">后勤3</div></a>
+		<a onclick="FocusFloors('TSG_01F')" ><div style="color: white;">图书馆3</div></a>
+		<a onclick="FocusFloors('TSG_02F')" ><div style="color: white;">图书馆3</div></a>
+		<a onclick="FocusFloors('DLT_01F')" ><div style="color: white;">大礼堂一3</div></a>
+		<a onclick="FocusFloors('DLT_02F')" ><div style="color: white;">大礼堂一3</div></a>
+		<a onclick="FocusFloors('XYSS02_01F')" ><div style="color: white;">学生宿舍二3</div></a>
+		<a onclick="FocusFloors('XYSS02_02F')" ><div style="color: white;">学生宿舍二3</div></a>
+		<a onclick="FocusFloors('XYSS03_01F')" ><div style="color: white;">学生宿舍三3</div></a>
+		<a onclick="FocusFloors('XYSS03_02F')" ><div style="color: white;">学生宿舍三3</div></a>
+		<a onclick="FocusFloors('XZL_01F')" ><div style="color: white;">行政楼3</div></a>
+		<a onclick="FocusFloors('XZL_03F')" ><div style="color: white;">行政楼3</div></a>
+		<a onclick="FocusFloors('ZJSS_01F')" ><div style="color: white;">行政楼3</div></a>
+		<a onclick="FocusFloors('ZJSS_02F')" ><div style="color: white;">行政楼3</div></a>
+		<!-- <a onclick="equipmentPosition('LEDDSXSP_DLT_02F_DMT001')" ><div>设备定位98寸教学一体机</div></a>
+		<a onclick="equipmentPosition('BQSXJ_DLT_02F_001')" ><div>设备定位98寸教学一体机</div></a> -->
+		<a onclick="equipmentPosition('12KGXPXJ_ZJSS_03F_JX001')" ><div>专家宿舍三层12口光纤配线架</div></a>
+        <a onclick="equipmentPosition('12KGXPXJ_ZJSS_02F_JX001')" ><div>专家宿舍二层12口光纤配线架</div></a>
+		<a onclick="equipmentScreening(1)" ><div>视频监控</div></a>
+		<a onclick="equipmentScreening(2)" ><div>多媒体</div></a>
+        <a onclick="equipmentScreening(3)" ><div>门禁系统</div></a>
+        <a onclick="equipmentScreening(4)" ><div>信息网络</div></a>
+		<a onclick="equipmentScreening(5)" ><div>信息导引发布系统</div></a>
+		<a onclick="equipmentScreening(6)" ><div>公共广播系统</div></a>
+		<a onclick="equipmentScreening(13)" ><div>会议系统13</div></a>
+		<a onclick="equipmentScreening(15)" ><div>综合布线系统</div></a>
+		<a onclick="electromechanicalFG()" ><div>一号教学楼风管</div></a>
+		<a onclick="electromechanicalSG()" ><div>一号教学楼水管</div></a>
+		<a onclick="electromechanicalDW()" ><div>一号教学楼电网</div></a>
+		<a onclick="unHigh()" ><div>取消高亮</div></a>
+		<a onclick="startCruise()" ><div>启动漫游</div></a>
+		<a onclick="pauseCruise()" ><div>暂停漫游</div></a>
+		<a onclick="startCruise()" ><div>继续漫游</div></a>
+		<a onclick="stop()" ><div>退出漫游</div></a>
+		
+		
+		    
+		
+		<script>
+		// 空格键暂停继续
+		var zt = 2;
+		document.addEventListener('mouseover', function(){
+			focus();                                                                        
+		})
+		$(document).keydown(function(event){
+		    if(event.keyCode ==32){
+		        if(zt == 1){
+					zt = 2;
+					pauseCruise();
+				}else{
+					zt = 1;
+					startCruise();
+				}
+		    }else if(event.keyCode ==27){
+				zt = 2;
+				stop();
+			}
+		});
+		
+		
+		// function TempeHumid(onejxlwsd){
+		// 	// console.log(onejxlwsd)
+		// 	MMAPI.TempeHumid(onejxlwsd);
+		// }
+		
+			// document.getElementById("info").style.display = "none";
+			// document.getElementById("info").style.fontSize = "12px";
+		</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,199 @@
+{
+	"camPos": [141,114,346],
+	"target": [0, 0, 0],
+	"effect": false,
+	"gamma": true,
+	"antialias": false,
+	"bloom": false,
+	"saoSW": false,
+	"bloomStrength": 1,
+	"bloomThreshold": 0.95,
+	"bloomRadius": 0.5,
+	"lightAmbientColor": "#ffffff",
+	"lightAmbient": "0",
+	"lightHemiColor": "#ffffff",
+	"lightHemiColorG": "#888888",
+	"lightHemi": "0.1",
+	"lightPointColor": "#ffffff",
+	"lightPoint": "0.09",
+	"lightShadow": true,
+	"lightSunColor": "#f7e8b5",
+	"lightSun": "2",
+	"lightSunHigh": "51.92",
+	"lightSunAngle": "334.25",
+	"lightSunBias": 25,
+	"sceneFog": true,
+	"fogColor": "#001d71",
+	"fogDensity": "10.3",
+	"skyType": 1,
+	"skyColor": "#001d71",
+	"skyBox": 216,
+	"skyShader1": 50,
+	"skyShader2": 50,
+	"skyShader3": 22,
+	"skyShader4": 20,
+	"lightMapIntensity": "0",
+	"aoMapIntensity": "0",
+	"envMapIntensity": "0.7",
+	"envMapTexture": 11,
+	"techColor": "#00beff",
+	"techOpacity": 0.05,
+	"techModelLine": false,
+	"models": [
+		{
+			"type": 1,
+			"name": "jd1jxl.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		},{
+			"type": 1,
+			"name": "jd2jxl.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		},{
+			"type": 1,
+			"name": "jd1xsss.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		},{
+			"type": 1,
+			"name": "jd2xsss.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		},{
+			"type": 1,
+			"name": "jddlt.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		},{
+			"type": 1,
+			"name": "jdtsg.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		},{
+			"type": 1,
+			"name": "jdtyg.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		},{
+			"type": 1,
+			"name": "jdzjss.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		},{
+			"type": 1,
+			"name": "jd3xsss.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		},{
+			"type": 1,
+			"name": "jdxzl.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		},{
+			"type": 1,
+			"name": "jdhqzx.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		},{
+			"type": 1,
+			"name": "jdjgss.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		},{
+			"type": 1,
+			"name": "jifang.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		},{
+			"type": 1,
+			"name": "jiedaixuan.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		},{
+			"type": 1,
+			"name": "zht.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		},{
+			"type": 1,
+			"name": "xm.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		},{
+			"type": 1,
+			"name": "rf.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		},{
+			"type": 1,
+			"name": "jdzht.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		},{
+			"type": 1,
+			"name": "jdxm.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		},{
+			"type": 1,
+			"name": "dxsjd.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		},{
+			"type": 1,
+			"name": "swjd.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		},{
+			"type": 1,
+			"name": "jdjiedaixuan.gltf",
+			"technology": false,
+			"scale": 1,
+			"rotation": 0,
+			"position": [0, 0, 0]
+		}
+	]
+}
